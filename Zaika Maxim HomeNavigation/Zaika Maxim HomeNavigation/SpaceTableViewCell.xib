@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SpaceTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpaceTableViewCell" rowHeight="419" id="tCy-Ir-tFZ" customClass="SpaceTableViewCell" customModule="Zaika_Maxim_HomeNavigation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="775" height="419"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tCy-Ir-tFZ" id="68Q-P7-o5u">
+                <rect key="frame" x="0.0" y="0.0" width="775" height="418.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="r5W-v5-RDQ">
+                        <rect key="frame" x="377.5" y="199.5" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x7J-xe-I9h">
+                        <rect key="frame" x="0.0" y="0.0" width="775" height="419"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x7J-xe-I9h" firstAttribute="leading" secondItem="68Q-P7-o5u" secondAttribute="leading" id="NGA-sd-9kM"/>
+                    <constraint firstItem="r5W-v5-RDQ" firstAttribute="centerX" secondItem="68Q-P7-o5u" secondAttribute="centerX" id="TNT-5W-ZBu"/>
+                    <constraint firstItem="r5W-v5-RDQ" firstAttribute="centerY" secondItem="68Q-P7-o5u" secondAttribute="centerY" id="cfY-Yu-jQ7"/>
+                    <constraint firstAttribute="trailing" secondItem="x7J-xe-I9h" secondAttribute="trailing" id="oZx-Eq-l4G"/>
+                    <constraint firstItem="x7J-xe-I9h" firstAttribute="top" secondItem="68Q-P7-o5u" secondAttribute="top" id="qVk-Go-lJJ"/>
+                    <constraint firstAttribute="bottom" secondItem="x7J-xe-I9h" secondAttribute="bottom" id="xrd-3T-r62"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="SpaceCell" destination="x7J-xe-I9h" id="9Sx-P2-WZ5"/>
+                <outlet property="activitiInd" destination="r5W-v5-RDQ" id="hp4-20-KFh"/>
+            </connections>
+            <point key="canvasLocation" x="90.5" y="-4.5"/>
+        </tableViewCell>
+    </objects>
+</document>
